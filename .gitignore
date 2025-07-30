@@ -1,0 +1,10 @@
+venv/
+
+logs/
+airflow.db
+airflow.cfg
+
+episodes.db
+
+__pycache__/
+*.pyc
