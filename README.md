@@ -20,7 +20,8 @@ This project is an Apache Airflow DAG that automatically fetches podcast episode
 Install required packages:
 
 ```bash
-pip install apache-airflow apache-airflow-providers-sqlite requests xmltodict pendulum
+pip install apache-airflow apache-airflow-providers-sqlite requests xmltodict pendulum 
+```
 
 ## How It Works
 
@@ -61,6 +62,7 @@ def download_episodes(episodes):
             audio = requests.get(episode["enclosure"]["@url"])
             with open(audio_path, "wb+") as f:
                 f.write(audio.content)
+```
 
 - If the second task get_episodes() hangs or has network issues, add this import and environment variable at the top of your DAG file to disable proxy:
 
