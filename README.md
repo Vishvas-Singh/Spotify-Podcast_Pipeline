@@ -68,7 +68,8 @@ def download_episodes(episodes):
 
 ```python
 import os
-os.environ['NO_PROXY'] = '*'
 
+os.environ['NO_PROXY'] = '*'
+```
 - Using airflow standalone is not an industry production practice. It is intended for local development and testing only. For this project, it is sufficient, but in production environments, a proper Airflow deployment setup should be used.
 
