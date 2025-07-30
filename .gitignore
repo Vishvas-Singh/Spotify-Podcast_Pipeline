@@ -4,6 +4,8 @@ logs/
 airflow.db
 airflow.cfg
 
+airflow/
+
 episodes.db
 
 __pycache__/
